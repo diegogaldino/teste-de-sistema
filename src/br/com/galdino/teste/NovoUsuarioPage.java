@@ -18,6 +18,7 @@ public class NovoUsuarioPage {
         txtNome.sendKeys(nome);
         txtEmail.sendKeys(email);
 
-        txtNome.submit();
+        WebElement btnClick = driver.findElement(By.id("btnSalvar"));
+        btnClick.click();
     }
 }
